@@ -31,3 +31,4 @@ def add_new_model(request, model_name, form=None, template='popup.html'):
 
     page_context = {'form': form, 'field': normal_model_name}
     return render_to_response(template, page_context, context_instance=RequestContext(request))
+

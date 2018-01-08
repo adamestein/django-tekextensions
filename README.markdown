@@ -1,4 +1,4 @@
-*tekextensions* is made for Django 1.6+.
+*tekextensions* is made for Django 1.11+.
 
 admin popups
 ====================

@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.contrib.sites.models import Site, RequestSite
 
 
 # noinspection PyUnusedLocal
@@ -12,6 +11,7 @@ def current_site(request):
     A context processor to add the "current_site" to the current Context
 
     """
+    from django.contrib.sites.models import Site, RequestSite
 
     context_name = 'CURRENT_SITE'
 
@@ -21,3 +21,4 @@ def current_site(request):
     except Site.DoesNotExist:
         # always return a dict, no matter what!
         return {context_name: RequestSite(request)}
+
