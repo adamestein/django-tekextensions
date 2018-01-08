@@ -20,7 +20,7 @@ class PopUpBaseWidget(forms.Widget):
             anchor = """
 {% load static %}
 <a href="/add/{{ model }}/" class="add-another" id="add_id_{{ field }}" onclick="return showAddAnotherPopup(this);">
-    <img src="{% static 'admin/img/icon_addlink.gif' %}">
+    <img src="{% static 'admin/img/icon-addlink.svg' %}">
 </a>
 """
             popupplus = Template(anchor).render(Context({'field': name, 'model': self.model}))

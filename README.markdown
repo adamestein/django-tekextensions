@@ -49,7 +49,7 @@ create the green plus sign link just as Django Admin does:
 
     {% load static %}
     <a href="/add/{{ model }}/" class="add-another" id="add_id_{{ field }}" onclick="return showAddAnotherPopup(this);">
-        <img src="{% static 'admin/img/icon_addlink.gif' %}">
+        <img src="{% static 'admin/img/icon-addlink.svg' %}">
     </a>
 
 The _model_ and _field_ values will be filled in automatically as the template is rendered.
